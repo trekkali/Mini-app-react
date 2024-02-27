@@ -1,0 +1,15 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pour centrer verticalement */
+  }
+  
+  .logo {
+    width: 80px; /* Ajustez la largeur du logo selon vos besoins */
+    height: auto; /* Pour conserver les proportions */
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  

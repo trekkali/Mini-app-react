@@ -1,0 +1,60 @@
+/* login.css */
+.input-group input {
+  background-color: #CCCCCC26;}
+/* Container principal de la page de connexion */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.login-form{
+
+  width: 305px;
+}
+.input {
+  height: 45px; /* Ajoutez la hauteur souhaitée */
+}
+.logo {
+  width: 80px;
+  height: 79.52px;
+}
+
+/* Input */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+/* Bouton de connexion */
+
+.button {
+  width: 305px; /* Ajustez la largeur selon vos préférences */
+  height: 45px; /* Même hauteur que les inputs */
+  background-color: black; /* Fond noir */
+  text-decoration: none;
+  color: white; /* Texte blanc */
+  border: none; /* Supprimer les bordures */
+  border-radius: 10px; /* Coins arrondis */
+  margin-bottom: 80px;
+  margin-top: 20px;
+  text-align: center; /* Centrer le texte à l'intérieur du bouton */
+  display: flex; /* Permettre au contenu de s'aligner au centre */
+  justify-content: center; /* Aligner le contenu horizontalement au centre */
+  align-items: center; /* Aligner le contenu verticalement au centre */
+}
+
+
+.form-group label {
+    display: flex;
+    align-items: center;
+  }
+  
+.form-check-input {
+  margin-bottom: 5px;
+    margin-right: 10px; /* Espacement entre la case à cocher et le texte */
+  }

@@ -1,0 +1,74 @@
+/* homepage.css */
+.home-page * {
+  color: black; /* Couleur du texte noire */
+}
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:130vh;
+  }
+  .icon-container {
+    width: 60px; /* Taille des conteneurs d'icônes */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Pour créer des cercles */
+    background-color: rgb(255, 255, 255); /* Fond blanc */
+    margin: 0 auto; /* Pour centrer horizontalement */
+    margin-bottom: 10px; /* Espacement entre les icônes */
+  }
+  
+  .icon-container img {
+    width: 50px; /* Taille des icônes */
+    height: auto;
+  }
+
+/* Styles pour les boutons contenant les icônes */
+.home-page button {
+  width: 141px; /* Largeur souhaitée */
+  height: 190px; /* Hauteur souhaitée *
+  border-radius: 20px; /* Coins arrondis */
+
+  flex-direction: column; /* Pour aligner les icônes au centre */
+
+  align-items: center; /* Pour aligner les icônes au centre */
+  text-align: left;
+}
+
+/* Styles pour les icônes à l'intérieur des boutons */
+.home-page button img {
+  width: 50px; /* Largeur souhaitée pour les icônes */
+  height: 50px; /* Hauteur souhaitée pour les icônes */
+  margin-bottom: 10px; /* Marge en bas de l'icône */
+}
+
+/* Homepage.css */
+
+/* Styles pour les icônes à l'intérieur des boutons */
+.home-page button img {
+  width: 40px; /* Largeur souhaitée pour les icônes */
+  height: 40px; /* Hauteur souhaitée pour les icônes */
+  padding: 6.67px 5px; /* Padding souhaité pour les icônes */
+}
+
+/* Styles pour les textes à l'intérieur des boutons */
+.home-page button h1,
+.home-page button p {
+  font-size: 12px; /* Taille de police souhaitée */
+  font-weight: 300; /* Poids de police souhaité */
+  line-height: 14px; /* Hauteur de ligne souhaitée */
+  letter-spacing: 0.02em; /* Espacement entre les lettres souhaité */
+  text-align: left; /* Alignement du texte */
+}
+
+/* Styles pour les titres à l'intérieur des boutons */
+.home-page button h1 {
+  font-size: 20px; /* Taille de police souhaitée pour les titres */
+  font-weight: bold; /* Poids de police souhaité pour les titres */
+  line-height: 30px; /* Hauteur de ligne souhaitée pour les titres */
+  text-align: left;
+}
+
