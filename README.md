@@ -1,3 +1,4 @@
+# Mini APP REACT
 Ce projet est une application de gestion des contribuables qui offre des fonctionnalités d'enrôlement et d'encaissement des contribuables. L'objectif principal de cette application est de permettre aux utilisateurs de saisir et de gérer les informations des contribuables de manière efficace.
 
 Fonctionnalités principales :
@@ -7,7 +8,7 @@ Encaissement des contribuables : Permet aux utilisateurs d'effectuer des encaiss
 
 Pop-up de confirmation : Affiche un pop-up de confirmation lorsqu'un contribuable est enregistré ou encaissé avec succès, fournissant ainsi une confirmation visuelle à l'utilisateur.
 
-Ce que j'ai appris :
+# Ce que j'ai appris :
 En développant ce projet, j'ai acquis plusieurs compétences et connaissances, notamment :
 
 Utilisation de React : J'ai appris à utiliser React pour créer des composants réutilisables et gérer l'état de l'application de manière efficace.
