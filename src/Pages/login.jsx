@@ -12,7 +12,6 @@ function LoginPage() {
       <div className="logo-container">
         <img className="logo" src="/logo.png" alt="Logo de l'application" />
       </div>
-
       {/* Formulaire de connexion */}
       <form className="login-form">
         <div className="form-group">
@@ -44,16 +43,16 @@ function LoginPage() {
           </div>
         </div>
         <div className="form-group">
-  <label htmlFor="remember-me">
-    <input
-      type="checkbox"
-      id="remember-me"
-      className="form-check-input"
-    />
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox"/>
+  <label class="form-check-label" for="exampleCheckbox">
     Se rappeler de moi
   </label>
 </div>
-<Link to="/Home" className="button">Connection</Link>
+  
+</div>
+<Link to="/Home" className="btn btn-primary">Connection</Link>
+
       </form>
 
       {/* Composant pour le droit d'auteur */}

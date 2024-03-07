@@ -35,10 +35,13 @@ function EncaisserPage() {
       
       {/* Pop-up */}
       {showPopup && <Popup1 onClose={handleClosePopup} />}
+
+      
       
       {/* Composant pour le droit d'auteur */}
       <CopyrightText />
     </div>
+    
   );
 }
 

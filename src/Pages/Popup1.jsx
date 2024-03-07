@@ -6,7 +6,7 @@ function Popup({ onClose }) {
       <div className="popup-content">
         <button className="close-btn" onClick={onClose}>X</button>
         <h2>Encaissement réussi</h2>
-        <p>MR TETECHI a payé</p>
+        <p>MR TETCHI a payé</p>
 
         <h1>10 000 FCFA</h1>
 

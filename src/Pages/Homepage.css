@@ -20,6 +20,18 @@
     margin: 0 auto; /* Pour centrer horizontalement */
     margin-bottom: 10px; /* Espacement entre les icônes */
   }
+
+  .fa-icon {
+    width: 60px; /* Taille des conteneurs d'icônes */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Pour créer des cercles */
+    background-color: rgb(255, 255, 255); /* Fond blanc */
+    margin: 0 auto; /* Pour centrer horizontalement */
+    margin-bottom: 10px;
+}
   
   .icon-container img {
     width: 50px; /* Taille des icônes */
@@ -71,4 +83,22 @@
   line-height: 30px; /* Hauteur de ligne souhaitée pour les titres */
   text-align: left;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Par défaut, affiche sur deux colonnes */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
 
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* Sur un écran plus petit, affiche sur une seule colonne */
+  }
+}
+
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Sur un écran plus grand, affiche sur trois colonnes */
+  }
+}

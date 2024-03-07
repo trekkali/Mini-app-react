@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -12,4 +14,3 @@
 body {
     font-family: 'Poppins', sans-serif;
   }
-  

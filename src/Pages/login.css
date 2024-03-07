@@ -58,3 +58,19 @@
   margin-bottom: 5px;
     margin-right: 10px; /* Espacement entre la case à cocher et le texte */
   }
+
+  .btn {
+    width: 305px;
+    height: 45px;
+    background-color: black !important;
+    text-decoration: none;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    text-align: center !important;
+    display: flex !important; /* Permettre au contenu de s'aligner au centre */
+    justify-content: center !important; /* Aligner le contenu horizontalement au centre */
+    align-items: center !important; 
+}
