@@ -1,5 +1,2 @@
-git lfs track "node_modules/.cache/default-development/20.pack"
-git lfs track "node_modules/.cache/default-development/5.pack"
-/home/beugreandysemariel/mon_projet/node_modules filter=lfs diff=lfs merge=lfs -text
-node_modules/* filter=lfs diff=lfs merge=lfs -text
+# gitattribute
 node_modules/.cache/default-development/* filter=lfs diff=lfs merge=lfs -text
