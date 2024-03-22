@@ -1,63 +1,73 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { BsPersonFill } from 'react-icons/bs'; // Importer l'icône de Bootstrap
-import { BsLockFill } from 'react-icons/bs';
-import CopyrightText from '../Components/CopyrightText.jsx';
-import './login.css';
+import React, { useState } from 'react';
+import { useNavigate, Link } from "react-router-dom";
+import { Input,Button, Checkbox} from '@material-tailwind/react';
+import { auth } from '../firebase-config';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import CopyrightText from '../Components/CopyrightText';
 
 function LoginPage() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        console.log(userCredential);
+        navigate("/Home");
+      })
+      .catch((error) => {
+        console.error('Erreur de connexion: ', error.message);
+        alert('erreur :' + error.message);
+      });
+  };
+
   return (
-    <div className="login-page">
-      {/* Logo */}
-      <div className="logo-container">
-        <img className="logo" src="/logo.png" alt="Logo de l'application" />
+    <div className="min-h-screen bg-gray-100 flex flex-col justify-center">
+      <div className="max-w-md w-full mx-auto p-8">
+        <div className="text-center">
+          <img className="mx-auto w-14 h-14 mb-4" src="/logo.png" alt="Logo de l'application" />
+        </div>
+        <form className="mt-8" onSubmit={handleLogin}>
+        <div className="w-full mb-8">
+              <Input label="Votre login" icon={<i className="material-icons">person</i>} placeholder=" " type="email"
+              color="gray"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div className="w-full ">
+              <Input label="Votre mot de passe" icon={<i className="material-icons">lock</i>} placeholder=" " type="password"
+              color="gray"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)} />
+        </div>
+          <div className="flex items-center mb-3">
+            <Checkbox color="dark" />
+            <label className="ml-2 text-sm text-gray-600">Se rappeler de moi</label>
+          </div>
+          <Button style={{ fontFamily: 'Poppins , sans-serif' }}
+            color="black"
+            size="lg"
+            type="submit"
+            ripple="light"
+            className="w-full"
+          >
+            Connexion
+          </Button>
+          <div className="text-sm text-center mt-4">
+            <Link to="/password-reset" className="font-medium text-dark-600 hover:text-blue-500">
+              Mot de passe oublié ?
+            </Link>
+          </div>
+        </form>
       </div>
-      {/* Formulaire de connexion */}
-      <form className="login-form">
-        <div className="form-group">
-          <label htmlFor="username"></label>
-          <div className="input-group">
-            <span className="input-group-text">
-              <BsPersonFill /> {/* Icône Bootstrap */}
-            </span>
-            <input
-              type="text"
-              className="form-control input"
-              id="username"
-              placeholder="Votre Login"
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <label htmlFor="password"></label>
-          <div className="input-group">
-            <span className="input-group-text">
-              <BsLockFill /> {/* Icône Bootstrap pour le mot de passe */}
-            </span>
-            <input
-              type="password"
-              className="form-control input"
-              id="password"
-              placeholder="Votre mot de passe"
-            />
-          </div>
-        </div>
-        <div className="form-group">
-        <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox"/>
-  <label class="form-check-label" for="exampleCheckbox">
-    Se rappeler de moi
-  </label>
-</div>
-  
-</div>
-<Link to="/Home" className="btn btn-primary">Connection</Link>
-
-      </form>
-
-      {/* Composant pour le droit d'auteur */}
-      <CopyrightText />
-    </div>
+      <div className="text-center mt-50">
+       <CopyrightText/>
+      </div>
+      </div>
+    
   );
 }
 

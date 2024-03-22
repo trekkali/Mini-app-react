@@ -1,16 +1,14 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Pour centrer verticalement */
-  }
-  
-  .logo {
-    width: 80px; /* Ajustez la largeur du logo selon vos besoins */
-    height: auto; /* Pour conserver les proportions */
-  }
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.logo {
+  width: 40px;
+  height: auto; 
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-  }
+  font-family: 'Poppins', sans-serif ;
+}
