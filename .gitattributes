@@ -1,1 +1,9 @@
+# Fichiers à suivre avec Git LFS
+# (Ajoutez d'autres extensions de fichiers si nécessaire)
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# Exclure les fichiers node_modules/.cache/default-development/5.pack et node_modules/.cache/default-development/20.pack du suivi Git LFS
+node_modules/.cache/default-development/5.pack lfs -text
+node_modules/.cache/default-development/20.pack lfs -text
 node_modules/.cache/default-development/* filter=lfs diff=lfs merge=lfs -text
