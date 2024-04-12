@@ -167,32 +167,6 @@ function HomePage() {
             </Button>
           </Link>
 
-          {/* Cadre Comptes */}
-          <Link to="/accounts">
-            <Button
-              color="white"
-              buttonType="filled"
-              size="regular"
-              rounded={false}
-              block={false}
-              ripple="light"
-              className="flex items-center justify-center hover:bg-gray-300 transition duration-
-              300"
-              >
-                {/* Icône */}
-                <img className="w-12 h-12" src="User@3x.png" alt="Icône" />
-  
-                {/* Texte */}
-                <div className="ml-2">
-                  <Typography as="h3" color="black" className="font-semibold text-lg">
-                    Comptes
-                  </Typography>
-                  <Typography as="p" color="black">
-                    Créer les comptes utilisateurs
-                  </Typography>
-                </div>
-              </Button>
-            </Link>
   
             {/* Cadre Contrôler */}
             <Link to="/control">
@@ -215,32 +189,6 @@ function HomePage() {
                   </Typography>
                   <Typography as="p" color="black">
                     Contrôler les contribuables
-                  </Typography>
-                </div>
-              </Button>
-            </Link>
-  
-            {/* Cadre Décaisser */}
-            <Link to="/withdraw">
-              <Button
-                color="white"
-                buttonType="filled"
-                size="regular"
-                rounded={false}
-                block={false}
-                ripple="light"
-                className="flex items-center justify-center hover:bg-gray-300 transition duration-300"
-              >
-                {/* Icône */}
-                <img className="w-12 h-12" src="Money_fill@3x.png" alt="Icône" />
-  
-                {/* Texte */}
-                <div className="ml-2">
-                  <Typography as="h3" color="black" className="font-semibold text-lg">
-                    Décaisser
-                  </Typography>
-                  <Typography as="p" color="black">
-                    Effectuer les décaissements
                   </Typography>
                 </div>
               </Button>
