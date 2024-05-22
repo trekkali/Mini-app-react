@@ -1,19 +1,19 @@
-# Projet d'enrôlement des contribuables
+# Taxpayer Enlistment Project
 
-Ce projet est une application web développée en utilisant React, une bibliothèque JavaScript populaire pour la construction d'interfaces utilisateur interactives. L'objectif principal de cette application est de permettre l'enregistrement des contribuables dans une base de données.
+This project is a web application developed using React, a popular JavaScript library for building interactive user interfaces. The main objective of this application is to allow the registration of taxpayers in a database.
 
-# Fonctionnalités principales
+# Main features
 
-Enregistrement des contribuables avec leurs informations personnelles telles que le nom, le prénom, le numéro de téléphone, etc.
-Attribution d'un numéro de matricule unique à chaque contribuable enregistré.
-Interface utilisateur conviviale avec des formulaires interactifs et des dialogues de confirmation.
-Intégration avec Firebase pour l'authentification des utilisateurs et le stockage des données.
-Utilisation de Tailwind CSS pour styliser l'interface utilisateur et assurer une expérience utilisateur moderne et responsive.
+Registration of taxpayers with their personal information such as name, surname, telephone number, etc.
+Allocation of a unique registration number to each registered taxpayer.
+Friendly user interface with interactive forms and confirmation dialogs.
+Integration with Firebase for user authentication and data storage.
+Using Tailwind CSS to style the user interface and ensure a modern and responsive user experience.
 
-# Ce que j'ai appris
+# What I learned
 
-Ce projet m'a permis d'approfondir mes connaissances en React et d'explorer des concepts avancés tels que les hooks, les routes, et la gestion des formulaires. J'ai également appris à intégrer Firebase dans une application React pour l'authentification utilisateur et le stockage de données en temps réel.
+This project allowed me to deepen my knowledge of React and explore advanced concepts such as hooks, routes, and form management. I also learned how to integrate Firebase into a React application for user authentication and real-time data storage.
 
-# Problèmes rencontrés
+# Problems encountered
 
-L'un des défis auxquels j'ai été confronté était la gestion de l'état de l'application et la synchronisation des données avec Firebase. Cependant, grâce à la documentation détaillée de React et Firebase, j'ai pu surmonter ces obstacles et créer une application fonctionnelle et performante.
+One of the challenges I faced was managing application state and syncing data with Firebase. However, thanks to the detailed documentation of React and Firebase, I was able to overcome these obstacles and create a functional and performant application.
